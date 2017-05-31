@@ -11,8 +11,11 @@ Window {
         anchors.fill: parent
         mouseArea.onClicked: {
             console.log(qsTr('Clicked on background. Text: "' + textEdit.text + '"'))
-            console.log("One more message ")
-            console.log("message 2")
+        }
+
+        Rectangle{
+            anchors.fill: parent
+            color: "black"
         }
     }
 }
